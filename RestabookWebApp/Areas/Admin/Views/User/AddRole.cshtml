@@ -1,0 +1,29 @@
+@model UserRoleVm
+
+<div class="container mt-4">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    
+    <div class="card">
+        <div class="card-header text-center">
+            <h4>Add Role to User</h4>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-3">
+                    <label for="role" class="form-label">Select Role</label>
+                    <select class="form-select form-select-lg mb-3" id="role" name="role">
+                        <option value="" disabled selected>Select a role</option>
+                        @foreach (var item in Model.Roles)
+                        {
+                            <option value="@item">@item</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-success w-50">Add Role</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

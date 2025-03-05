@@ -1,0 +1,23 @@
+@model Event
+
+<form method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Name">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="EventDate" class="form-label"></label>
+        <input type="date" class="form-control" asp-for="EventDate">
+        <span class="text-danger" asp-validation-for="EventDate"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Description">
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <div class="text-center m-4">
+        <button type="submit" class="btn btn-primary">Create</button>
+    </div>
+</form>

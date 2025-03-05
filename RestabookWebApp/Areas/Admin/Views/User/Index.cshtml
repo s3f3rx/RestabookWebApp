@@ -1,0 +1,51 @@
+@model List<AppUser>
+@inject Microsoft.AspNetCore.Identity.UserManager<AppUser> userManager
+@{
+    int counter = 0;
+}
+<div class="d-flex justify-content-between mb-3">
+    <h1>Users</h1>
+    <div class="d-flex justify-content-center w-100">
+        <a href="/admin/user/create" class="btn btn-dark d-flex justify-content-center align-items-center">
+            Create
+        </a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Roles</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@(++counter)</td>
+            <td>@user.FirstName @user.LastName</td>
+            <td>@user.Email</td>
+            <td>
+                @{
+                    var userRoles = await userManager.GetRolesAsync(user);
+                    foreach (var role in userRoles)
+                    {
+                        <span>@role</span>
+                    }
+                }
+            </td>
+            <td>
+                <a href="/admin/user/addrole/@user.Id" class="btn btn-danger ms-3">Add Role</a>
+                @* <a href="/admin/user/edit/@user.Id" class="btn btn-warning me-3">Edit Role</a> *@
+                <a asp-area="Admin" asp-controller="User" asp-action="Edit"
+                   asp-route-userId="@user.Id" class="btn btn-warning">Edit Role</a>    
+            </td>
+
+        </tr>
+    }
+    </tbody>
+</table>

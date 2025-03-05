@@ -1,0 +1,18 @@
+@model Article
+
+<h1>Delete Article</h1>
+<form method="post" asp-action="Delete" asp-route-id="@Model.Id">
+    <div class="form-group">
+        <label for="deleteType">Choose Delete Type</label>
+        <select id="deleteType" name="hardDelete" class="form-control">
+            <option selected disabled>Select a delete method</option>
+            <option value="false">Soft Delete (Mark as Deleted)</option>
+            <option value="true">Hard Delete (Delete Permanently)</option>
+        </select>
+    </div>
+    <div class="form-group text-center">
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="/admin/article" class="btn btn-warning">Cancel</a>
+    </div>
+</form>
+

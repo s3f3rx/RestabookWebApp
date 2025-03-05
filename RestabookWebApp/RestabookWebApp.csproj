@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="wwwroot\article\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\ReservationFormViewComponent\Reservation.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\005650e1-b2eb-41e2-8ac1-e84a2433b4013.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\1c22e51b-52cf-42e4-8521-77d12ad8d6792.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\35fee5eb-1597-4acb-8a37-e5c7aad3208aWhatsApp Image 2024-12-29 at 17.06.38_6c124dd1.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\61abb563-1d8a-4cb5-b9bb-109ed5d0e7dd55192261.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\62ad625f-fa6a-4114-9bc6-1403f1e77a0455192261.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\6cde8d9c-25b7-42c3-8774-0e66c4eeea3d55192261.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\7818cee9-366b-43fd-92a2-d02f25bcb7b955192261.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\bce32e68-0dc2-4310-83f9-921f3c8de8b455192261.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\service\4eb03aea-d81b-43cf-8946-b7e7a9effa3a2.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\service\4fc8dcbf-da06-48c8-afb1-22f1b62639ab3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\service\b45526ac-3b26-4992-b298-544cdc82aba03.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\about\250c47a4-eebf-448d-ba29-69329244f9303.jpg" />
+  </ItemGroup>
+
+</Project>

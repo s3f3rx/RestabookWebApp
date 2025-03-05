@@ -1,0 +1,23 @@
+@model IdentityRole
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title text-center">Delete Role</h4>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <p class="text-center">Are you sure you want to delete this role: <strong>@Model.Name</strong>?</p>
+                </div>
+
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-danger me-3">Delete</button>
+                    <a href="/admin/role" class="btn btn-warning">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

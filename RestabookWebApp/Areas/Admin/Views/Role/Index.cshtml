@@ -1,0 +1,35 @@
+@model List<IdentityRole>
+@{
+    var counter = 0;
+}
+<div class="d-flex justify-content-between mb-3">
+    <h1>Roles</h1>
+    <div class="d-flex justify-content-center w-100">
+        <a href="/admin/role/create" class="btn btn-dark d-flex justify-content-center align-items-center">
+            Create
+        </a>
+    </div>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@(++counter)</td>
+            <td>@item.Name</td>
+            <td>
+                <a href="/admin/role/edit/@item.Id" class="btn btn-warning me-3">Edit</a>
+                <a href="/admin/role/delete/@item.Id" class="btn btn-danger ms-3">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

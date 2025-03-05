@@ -1,0 +1,8 @@
+@model Tag
+
+<form method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <p>Are you sure to delete this: @Model.Name?</p>
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="/admin/tag" class="btn btn-warning">Cancel</a>
+</form>

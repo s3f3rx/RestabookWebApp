@@ -1,0 +1,33 @@
+@model Service
+
+<form method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp-for="CreatedDate">
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Title">
+        <span class="text-danger" asp-validation-for="Title"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SubTitle" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="SubTitle">
+        <span class="text-danger" asp-validation-for="SubTitle"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input type="text" class="form-control" asp-for="Description">
+        <span class="text-danger" asp-validation-for="Description"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PhotoPath" class="form-label"></label>
+        <input type="file" name="file" accept="image/*" class="form-control" asp-for="PhotoPath">
+        <span class="text-danger" asp-validation-for="PhotoPath"></span>
+    </div>
+    <div class="mb-3">
+        <input type="hidden" asp-for="PhotoPath">
+        <img src="@Model.PhotoPath" width="150" height="100" alt="">
+    </div>
+    <div class="text-center m-4">
+        <button type="submit" class="btn btn-warning">Update</button>
+    </div>
+</form>

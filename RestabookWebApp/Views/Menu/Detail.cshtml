@@ -1,0 +1,247 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using RestabookWebApp.Models
+@using RestabookWebApp.ViewModels
+@model RestabookWebApp.ViewModels.DetailVm
+<div class="content">
+    <!--  section  -->
+    <section class="parallax-section hero-section hidden-section" data-scrollax-parent="true">
+        <div class="bg par-elem" data-scrollax="properties: { translateY: '30%' }">
+            <img src="~/assets/images/bg/19.jpg" alt="">
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="section-title">
+                <h4>Order food with home delivery</h4>
+                <h2>Our Shop</h2>
+                <div class="dots-separator fl-wrap"><span></span></div>
+            </div>
+        </div>
+        <div class="hero-section-scroll">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+        <div class="brush-dec"></div>
+    </section>
+    <!--  section  end-->
+    <!--  section  -->
+    <section class="hidden-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="fl-wrap post-container">
+                        <!-- post -->
+                            <div class="post fl-wrap fw-post">
+                                <div class="shop-header-title fl-wrap">
+                                    <h2>@Model.Product.Name</h2>
+                                    <div class="shop-header-title_opt">
+                                        <ul>
+                                            @if (@Model.Product.DiscountPrice.HasValue && @Model.Product.DiscountPrice > 0)
+                                            {
+                                                <span class="hero-menu-item-price">
+                                                    <span
+                                                        style="font-weight: bold; display: inline-block; margin-right: 10px;">
+                                                        Price: <strong
+                                                            style="text-decoration: line-through; color: red;">$@Model.Product.Price</strong>
+                                                    </span>
+                                                    <span style="font-weight: bold; display: inline-block;">
+                                                        Discount Price: <strong
+                                                            style="color: green;">$@Model.Product.DiscountPrice</strong>
+                                                    </span>
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="hero-menu-item-price" style="font-weight: bold;">
+                                                    Price: <strong>$@Model.Product.Price</strong>
+                                                </span>
+                                            }
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- blog media -->
+                                <div class="blog-media fl-wrap">
+                                    <div class="single-slider-wrap">
+                                        <div class="product-slider fl-wrap">
+                                            <div class="swiper-container">
+                                                <div class="swiper-wrapper lightgallery">
+                                                    <img src="@Model.Product.PhotoPath" alt="Product Image"
+                                                         style="width: 100%; height: 400px; object-fit: cover;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- blog media end -->
+                                <div class="blog-text fl-wrap">
+                                    <div class="pr-tags fl-wrap">
+                                        <span>Categories : </span>
+                                        <ul>
+                                            <li><a href="#">@Model.Product.Category.Name</a></li>
+                                        </ul>
+                                    </div>
+                                    <p>@Model.Product.Description</p>
+                                </div>
+                                <div class="shop-item-footer fl-wrap">
+                                    <div class="qty_btn">
+                                        <input type="number" name="cartqty" value="1" max="50" min="1" class="order-count">
+                                        <button class="btn">Add to cart <i class="fal fa-long-arrow-right"></i></button>
+                                    </div>
+                                    <ul class="post-counter">
+                                        <li><i class="far fa-eye"></i><span>567</span></li>
+                                        <li><i class="fal fa-shopping-bag"></i><span>256</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- post end-->
+                        <!--end respond-->
+                        <!--post-related-->
+                        <div class="post-related fl-wrap">
+                            <h6 class="comments-title">You Might Also Like</h6>
+                            @if (Model.RelatedProducts != null && Model.RelatedProducts.Any())
+                            {
+                                <!-- post-related -->
+                                <div class="row">
+                                    @foreach (var item in Model.RelatedProducts)
+                                    {
+                                        <!-- 1 -->
+                                        <div class="item-related col-md-4">
+                                            <a href="#"><img src="@item.PhotoPath" alt=""></a>
+                                            <h3><a href="#">@item.Name</a></h3>
+                                            @if (item.DiscountPrice.HasValue && item.DiscountPrice > 0)
+                                            {
+                                                <span class="hero-menu-item-price">
+                                                    
+                                                    <span
+                                                        style="font-weight: bold; display: inline-block;
+                                                         margin-right: 10px;"> Price:
+                                                        <strong
+                                                            style="text-decoration: line-through;
+                                                             color: red;">$@item.Price
+                                                        </strong> 
+                                                        </span>
+                                                    
+                                                    <span
+                                                        style="font-weight: bold;
+                                                         display: inline-block;"> Discount Price:
+                                                        <strong style="color: green;">$@item.DiscountPrice</strong>
+                                                    </span>
+                                                </span>
+                                            }
+                                            else
+                                            {
+                                                <span class="hero-menu-item-price"
+                                                      style="font-weight: bold;"> Price: <strong>$@item.Price</strong> </span>
+                                            }
+                                        </div>
+                                        <!-- 1 end-->
+                                    }
+                                </div>
+                            }
+                            else
+                            {
+                                <p style="color: red" ;>No Releated Products
+                                    Available</p>
+                            }
+                        </div>
+
+                        <!-- post-related  end-->
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="bold-separator bold-separator_dark"><span></span></div>
+                    <div class="clearfix"></div>
+                    <a href="/shop" class="btn  shop-btn">Back to Shop<i class="fal fa-long-arrow-right"></i></a>
+                </div>
+                <!--  sidebar  -->
+                <div class="col-md-4">
+                    <!-- main-sidebar -->
+                    <div class="main-sidebar fixed-bar fl-wrap">
+                        <div class="main-sidebar-widget fl-wrap">
+                            <h3>Popular Products</h3>
+                            @if (Model.PopularProducts != null && Model.PopularProducts.Any())
+                            {
+                                <div class="recent-post-widget">
+                                    <ul>
+                                        @foreach (var item in Model.PopularProducts)
+                                        {
+                                            <li>
+                                                <div class="recent-post-img"><a href="#">
+                                                        <img src="@item.PhotoPath" alt=""></a>
+                                                </div>
+                                                <div class="recent-post-content">
+                                                    <h4><a href="#">@item.Name</a></h4>
+                                                    <div class="recent-post-opt">
+                                                        @if (item.DiscountPrice.HasValue && item.DiscountPrice > 0)
+                                                        {
+                                                            <span class="post-date post-price"
+                                                            >
+                                                                  Price: <strong
+                                                                    style="text-decoration: line-through; color: red"
+                                                                    ;>$@item.Price</strong>
+                                                        </span>
+                                                            <br/>
+                                                            <span class="post-date post-price"
+                                                            >
+                                                            Discount Price: <strong
+                                                                    style="color: green; font-weight:
+                                                                 bold;">$@item.DiscountPrice</strong></span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <span class="post-date post-price"
+                                                                  style="font-weight: bold;">
+                                                          Price: <strong>$@item.Price</strong>
+                                                         </span>
+                                                        }
+                                                        <br>
+                                                        <span class="post-date">
+                                                        Category: <strong>$@item.Category.Name</strong>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <p style="color: red" ;>No Popular Products Available</p>
+                            }
+                        </div>
+                        <!-- main-sidebar-widget end-->
+                        <!-- main-sidebar-widget-->
+                        <div class="main-sidebar-widget fl-wrap">
+                            <h3>Categories</h3>
+                            @if (Model.Categories != null && Model.Categories.Any())
+                            {
+                                <div class="category-widget">
+                                    <ul class="cat-item">
+                                        @foreach (var item in Model.Categories)
+                                        {
+                                            <li><a href="#">@item.Name</a></li>
+                                        }
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <p style="color: red" ;>No Categories Available</p>
+                            }
+                        </div>
+
+                        <!-- main-sidebar-widget end-->
+                    </div>
+                    <!-- main-sidebar end-->
+                </div>
+                <!--  sidebar end-->
+            </div>
+            <div class="fl-wrap limit-box"></div>
+        </div>
+        <div class="section-bg">
+            <div class="bg" data-bg="images/bg/dec/section-bg.png"></div>
+        </div>
+    </section>
+    <!--  section end  -->
+    <div class="brush-dec2 brush-dec_bottom"></div>
+</div>

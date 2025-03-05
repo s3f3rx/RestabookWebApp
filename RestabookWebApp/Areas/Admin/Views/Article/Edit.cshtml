@@ -1,0 +1,50 @@
+@model Article
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="CreatedDate">
+    <input type="hidden" asp-for="PhotoPath">
+    <input type="hidden" asp-for="AppUserId">
+
+    <div class="form-group">
+        <label asp-for="Title">Article Title</label>
+        <input type="text" asp-for="Title" class="form-control">
+        <span asp-validation-for="Title" class="text-danger"> </span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description">Description</label>
+        <textarea asp-for="Description" id="editor1" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"> </span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhotoPath" class="form-label"></label>
+        <input type="file" name="file" accept="image/*" class="form-control">
+        <span class="text-danger" asp-validation-for="PhotoPath"></span>
+    </div>
+    <div class="mb-3">
+        <input type="hidden" asp-for="PhotoPath">
+        <img src="@Model.PhotoPath" width="150" height="100" alt="">
+    </div>
+    <div class="form-group">
+        <label asp-for="Category" class="form-label">Categories</label>
+        <select asp-items="@ViewBag.Categories" asp-for="CategoryId" class="form-control">
+            <option selected disabled>Select a category</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label class="form-label">Tags</label>
+        <select name="tags" asp-items="ViewBag.Tags" multiple class="form-control">
+            <option disabled>Select a tag</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsActive" for="active">Is Active</label>
+        <input type="checkbox" id="active" asp-for="IsActive">
+    </div>
+    <div class="form-group">
+        <label asp-for="IsDeleted" for="delete">Is Deleted</label>
+        <input type="checkbox" id="delete" asp-for="IsDeleted">
+    </div>
+    <div class="form-group d-flex justify-content-center">
+        <input type="submit" value="Edit" class="btn btn-success ">
+    </div>
+</form>

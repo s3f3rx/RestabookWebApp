@@ -1,0 +1,114 @@
+@model RestabookWebApp.ViewModels.MenuVm
+<div class="content">
+    <!--  section  -->
+    <section class="parallax-section hero-section hidden-section" data-scrollax-parent="true">
+        <div class="bg par-elem " data-scrollax="properties: { translateY: '30%' }">
+            <img src="~/assets/images/bg/6.jpg" alt="">
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="section-title">
+                <h4>Enjoy your time in our restaurant with pleasure.</h4>
+                <h2>Discover Our Menu</h2>
+                <div class="dots-separator fl-wrap"><span></span></div>
+            </div>
+        </div>
+        <div class="hero-section-scroll">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+        <div class="brush-dec"></div>
+    </section>
+    <!--  section  end-->
+
+    <!--  section  -->
+    <section class="hidden-section" data-scrollax-parent="true" id="sec2">
+        <div class="container">
+            <!-- gallery-filters -->
+            <div class="gallery-filters gth">
+                @for (var i = 0; i < Model.Categories.Count; i++)
+                {
+                    <a href="#" class="gallery-filter" data-filter=".category-@Model.Categories[i].Id">
+                        <span>@(i + 1).</span>@Model.Categories[i].Name
+                    </a>
+                }
+            </div>
+            <!-- gallery-filters end -->
+
+            <!-- gallery start -->
+            <div class="gallery-items grid-big-pad lightgallery three-column fl-wrap" style="margin-bottom:50px;">
+                @foreach (var category in Model.Categories)
+                {
+                    @foreach (var product in category.Products)
+                    {
+                        <div class="col-lg-4 col-md-6 col-sm-12 gallery-item category-@category.Id">
+                            <a href="/menu/detail/@product.Id" class="gallery-item-holder hov_zoom">
+                                <div class="latest-news-bg" style="background-image: url(@product.PhotoPath)"></div>
+                                <img src="@product.PhotoPath" alt="@product.Name" class="img-fluid" style="height: 200px; object-fit: cover;">
+                                <div class="grid-item-details">
+                                    <h3>@product.Name</h3>
+                                    <p>@product.Description</p>
+                                    <div class="grid-item_price">
+                                        @if (product.DiscountPrice.HasValue && product.DiscountPrice > 0)
+                                        {
+                                            <span class="hero-menu-item-price">
+                                                <span style="text-decoration: line-through; opacity: 0.6; margin-right: 5px;">
+                                                    $@product.Price  
+                                                </span>
+                                                <br>
+                                                <span style="color: green; font-weight: bold;">$@product.DiscountPrice</span>
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="hero-menu-item-price" style="font-weight: bold;">$@product.Price</span>
+                                        }
+                                        <div class="add_cart">Add To Cart</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                }
+            </div>
+            <!-- gallery end -->
+
+            <div class="clearfix"></div>
+            <div class="bold-separator bold-separator_dark"><span></span></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="section-bg">
+            <div class="bg" data-bg="~/assets/images/bg/dec/section-bg.png"></div>
+        </div>
+    </section>
+    <!--  section end  -->
+
+    <div class="brush-dec2 brush-dec_bottom"></div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const filters = document.querySelectorAll(".gallery-filter");
+        const items = document.querySelectorAll(".gallery-item");
+
+        filters.forEach(filter => {
+            filter.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                let filterValue = this.getAttribute("data-filter").replace('.', '');
+
+                filters.forEach(f => f.classList.remove("gallery-filter-active"));
+                this.classList.add("gallery-filter-active");
+
+                items.forEach(item => {
+                    if (filterValue === "all" || item.classList.contains(filterValue)) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    });
+</script>

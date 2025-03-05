@@ -1,0 +1,69 @@
+@using System.Globalization
+@model List<Article>
+<div class="d-flex justify-content-between mb-3">
+    <h1>Articles</h1>
+    <div class="d-flex justify-content-center w-100">
+        <a href="/admin/article/create" class="btn btn-dark d-flex justify-content-center align-items-center">
+            Create
+        </a>
+    </div>
+</div>
+<table id="myTable" class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Category</th>
+        <th>Tags</th>
+        <th>Created Date</th>
+        <th>Updated Date</th>
+        <th>User</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Title</td>
+            <td>
+                <img src="@item.PhotoPath" width="150" height="90" alt="">
+            </td>
+            <td>@item.Category.Name</td>
+            <td>
+                @* @for (var i = 0; i < item.ArticleTags.Count(); i++) *@
+                @* { *@
+                @*     <span>@item.ArticleTags.ElementAt(i).Tag.Name</span> *@
+                @*     @if (i < item.ArticleTags.Count() - 1) *@
+                @*     { *@
+                @*         <span>/ </span> *@
+                @*     } *@
+                @* } *@
+                @foreach (var tag in item.ArticleTags)
+                {
+                    <span>@tag.Tag.Name</span>
+                    @if (tag != item.ArticleTags.Last())
+                    {
+                        <span>/ </span>
+                    }
+                }
+            </td>
+            <td>@item.CreatedDate.ToString("dd MMMM yyyy", new CultureInfo("az"))</td>
+            <td>@(item.UpdatedDate.HasValue
+                    ? item.UpdatedDate.Value
+                        .ToString("dd MMMM yyyy", new CultureInfo("az"))
+                    : "Not Updated")</td>
+            <td>@item.AppUser.FirstName @item.AppUser.LastName</td>
+            <td>@(item.IsActive ? "Aktiv" : "Deaktiv")</td>
+            <td class="d-flex justify-content-between" style="width: 100%; white-space: nowrap;">
+                <a href="/admin/article/edit/@item.Id" class="btn btn-warning me-3">Edit</a>
+                <a href="/admin/article/delete/@item.Id" class="btn btn-danger ms-3">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+

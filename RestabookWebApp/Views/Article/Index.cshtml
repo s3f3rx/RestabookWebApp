@@ -1,0 +1,170 @@
+@using System.Globalization
+@using RestabookWebApp.Models
+@model List<RestabookWebApp.Models.Article>
+
+<div class="content">
+    <!--  section  -->
+    <section class="parallax-section hero-section hidden-section" data-scrollax-parent="true">
+        <div class="bg par-elem " data-scrollax="properties: { translateY: '30%' }">
+            <img src="~/assets/images/bg/11.jpg" alt="">
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="section-title">
+                <h4>Our last News and Events</h4>
+                <h2>Our Journal</h2>
+                <div class="dots-separator fl-wrap"><span></span></div>
+            </div>
+        </div>
+        <div class="hero-section-scroll">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+        <div class="brush-dec"></div>
+    </section>
+    <!--  section  end-->
+    <!--  section  -->
+    <section class="hidden-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="fl-wrap post-container">
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <div class="post fl-wrap fw-post">
+                                    <h2>@item.Title</h2>
+                                    <ul class="blog-title-opt">
+                                        <li>
+                                            <a href="#">@item.CreatedDate.ToString("dd MMMM yyyy", new CultureInfo("az"))</a>
+                                        </li>
+                                        <li> -</li>
+                                        <li><a href="#">@item.Category.Name</a></li>
+                                    </ul>
+                                    <!-- blog media -->
+                                    <div class="blog-media fl-wrap">
+                                        <img src="@item.PhotoPath" style="width: 100%; height: 600px; object-fit: cover"
+                                             class="respimg" alt="@item.Title">
+                                    </div>
+                                    <!-- blog media end -->
+                                    <div class="blog-text fl-wrap">
+                                        <div class="pr-tags fl-wrap">
+                                            <span>Tags : </span>
+                                            <ul>
+                                                @foreach (var tag in item.ArticleTags)
+                                                {
+                                                    <li><a href="#">@tag.Tag.Name</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                        <p>@item.Description</p>
+                                        <a href="/article/detail/@item.Id" class="btn">Read more
+                                            <i class="fal fa-long-arrow-right"></i></a>
+                                        <ul class="post-counter">
+                                            <li><i class="far fa-comment"></i><span>3</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <!-- Eğer model null veya boşsa, No Articles mesajını göster -->
+                            <div class="no-articles">
+                                <p style="color: red">No Articles</p>
+                            </div>
+                        }
+                        <!-- post end -->
+
+                        <!--pagination-->
+                        <div class="pagination fl-wrap">
+                            @for (var i = 1; i <= ViewBag.TotalPages; i++)
+                            {
+                                if (i == ViewBag.CurrentPage)
+                                {
+                                    <a href="#" class="current-page">@i</a>
+                                }
+                                else
+                                {
+                                    <a href="@Url.Action("Index", new { page = i })">@i</a>
+                                }
+                            }
+                        </div>
+                        <!--pagination end-->
+                    </div>
+                </div>
+                <!--  sidebar  -->
+                <div class="col-md-4">
+                    <!-- main-sidebar -->
+                    <div class="main-sidebar fixed-bar fl-wrap">
+                        <!-- main-sidebar-widget-->
+                        <div class="main-sidebar-widget fl-wrap">
+                            <h3>Recent tags </h3>
+                            <div class="tags-widget">
+                                <div class="tagcloud">
+                                    @if (ViewBag.Tags is List<Tag> recentTags && recentTags.Any())
+                                    {
+                                        foreach (var recentTag in recentTags)
+                                        {
+                                            <a href="#">@recentTag.Name</a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <p style="color: red">No tags available.</p>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <!-- main-sidebar-widget end-->
+
+                        <!-- main-sidebar-widget-->
+                        <div class="main-sidebar-widget fl-wrap">
+                            <h3>Categories</h3>
+                            <div class="category-widget">
+                                <ul class="cat-item">
+                                    @if (ViewBag.Categories is List<Category> categories && categories.Any())
+                                    {
+                                        foreach (var category in categories)
+                                        {
+                                            <li><a href="#">@category.Name</a></li>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <p style="color: red">No categories available.</p>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- main-sidebar-widget end-->
+                        <!-- main-sidebar-widget-->
+                        <div class="main-sidebar-widget fl-wrap">
+                            <h3>Social widget</h3>
+                            <div class="social-widget">
+                                <ul>
+                                    <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-tumblr"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- main-sidebar-widget end-->
+                    </div>
+                    <!-- main-sidebar end-->
+                </div>
+                <!--  sidebar end-->
+            </div>
+            <div class="fl-wrap limit-box"></div>
+        </div>
+        <div class="section-bg">
+            <div class="bg" data-bg="images/bg/dec/section-bg.png"></div>
+        </div>
+    </section>
+    <!--  section end  -->
+    <div class="brush-dec2 brush-dec_bottom"></div>
+</div>

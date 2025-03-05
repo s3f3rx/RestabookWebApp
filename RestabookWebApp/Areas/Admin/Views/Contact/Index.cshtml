@@ -1,0 +1,35 @@
+@using System.Globalization
+@model List<Contact>
+
+<div class="d-flex justify-content-between mb-3">
+    <h1>Contacts</h1>
+</div>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th class="text-center">#</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Email</th>
+        <th class="text-center">Phone</th>
+        <th class="text-center">Subject</th>
+        <th class="text-center">Message</th>
+        <th class="text-center">Created Date</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th scope="row">@item.Id</th>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Phone</td>
+            <td>@item.Subject</td>
+            <td>@item.Message</td>
+            <td>@item.CreatedDate.ToString("dd MMMM yyyy", new CultureInfo("az"))</td>
+        </tr>
+    }
+    </tbody>
+</table>

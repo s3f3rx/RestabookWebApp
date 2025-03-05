@@ -1,0 +1,115 @@
+@model RestabookWebApp.Models.Reservation
+
+<div class="content">
+    <!--  section  -->
+    <section class="parallax-section hero-section hidden-section" data-scrollax-parent="true">
+        <div class="bg par-elem " data-scrollax="properties: { translateY: '30%' }">
+            <img src="~/assets/images/bg/6.jpg" alt="">
+        </div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="section-title">
+                <h4>Don't forget to book a table</h4>
+                <h2>Reserve A Table</h2>
+                <div class="dots-separator fl-wrap"><span></span></div>
+            </div>
+        </div>
+        <div class="hero-section-scroll">
+            <div class="mousey">
+                <div class="scroller"></div>
+            </div>
+        </div>
+        <div class="brush-dec"></div>
+    </section>
+    <!--  section  end-->
+
+    <!--  section  -->
+    <section class="hidden-section big-padding con-sec" data-scrollax-parent="true" id="sec3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    @if (ViewBag.SuccessMessage != null)
+                    {
+                        <div class="alert alert-success">
+                            @ViewBag.SuccessMessage
+                        </div>
+                    }
+                    <div class="section-title ">
+                        <h2>Table Reservations</h2>
+                        <div class="dots-separator fl-wrap"><span></span></div>
+                    </div>
+                    <form method="post" asp-action="Reservation">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label"></label>
+                            <input type="text" class="form-control" asp-for="Name">
+                            <span class="text-danger" asp-validation-for="Name"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label"></label>
+                            <input type="email" class="form-control" asp-for="Email">
+                            <span class="text-danger" asp-validation-for="Email"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Phone" class="form-label"></label>
+                            <input type="text" class="form-control" asp-for="Phone">
+                            <span class="text-danger" asp-validation-for="Phone"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Persons" class="form-label">Select People</label>
+                            <select class="form-control" asp-for="Persons">
+                                <option data-display="Persons">Any</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="Banquet">Banquet</option>
+                            </select>
+                            <span class="text-danger" asp-validation-for="Persons"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ResDate" class="form-label"></label>
+                            <input type="date" class="form-control" asp-for="ResDate"
+                                   min="@DateTime.Now.ToString("yyyy-MM-dd")">
+                            <span class="text-danger" asp-validation-for="ResDate"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="ResTime" class="form-label">Select Time</label>
+                            <select class="form-control" asp-for="ResTime">
+                                <option data-display="Time">Any</option>
+                                <option value="10:00am">10:00 am</option>
+                                <option value="11:00am">11:00 am</option>
+                                <option value="12:00pm">12:00 pm</option>
+                                <option value="1:00pm">1:00 pm</option>
+                                <option value="2:00pm">2:00 pm</option>
+                                <option value="3:00pm">3:00 pm</option>
+                                <option value="4:00pm">4:00 pm</option>
+                                <option value="5:00pm">5:00 pm</option>
+                                <option value="6:00pm">6:00 pm</option>
+                                <option value="7:00pm">7:00 pm</option>
+                                <option value="8:00pm">8:00 pm</option>
+                                <option value="9:00pm">9:00 pm</option>
+                                <option value="10:00pm">10:00 pm</option>
+                            </select>
+                            <span class="text-danger" asp-validation-for="ResTime"></span>
+                        </div>
+                        <textarea name="Message" id="comments2" cols="40" rows="3" placeholder="Your Message:"
+                                  asp-for="Message"></textarea>
+
+                        <button class="btn float-btn flat-btn color-bg" id="submit_cnt" type="submit">Reserve<i
+                                class="fal fa-long-arrow-right"></i></button>
+                    </form>
+                    <div class="section-dec sec-dec_top"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-bg">
+            <div class="bg" data-bg="images/bg/dec/section-bg.png"></div>
+        </div>
+    </section>
+    <!--  section end  -->
+    <div class="brush-dec2 brush-dec_bottom"></div>
+</div>
+
