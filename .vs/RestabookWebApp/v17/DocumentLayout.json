@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Migrations\\20250307205753_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RestabookWebApp\\Migrations\\20250307205753_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\views\\about\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\views\\about\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\controllers\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\models\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|solutionrelative:restabookwebapp\\areas\\admin\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E433111-D790-49D7-B4E3-203DA7AB2181}|RestabookWebApp\\RestabookWebApp.csproj|c:\\users\\murad\\source\\repos\\restabookwebapp\\restabookwebapp\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -59,6 +75,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "RestabookWebApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "RestabookWebApp\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:58:17.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250307205753_Init.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Migrations\\20250307205753_Init.cs",
+              "RelativeDocumentMoniker": "RestabookWebApp\\Migrations\\20250307205753_Init.cs",
+              "ToolTip": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Migrations\\20250307205753_Init.cs",
+              "RelativeToolTip": "RestabookWebApp\\Migrations\\20250307205753_Init.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:57:53.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "ToolTip": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "RelativeToolTip": "RestabookWebApp\\Areas\\Admin\\Controllers\\ArticleController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:55:24.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Controllers\\ArticleController.cs",
+              "RelativeDocumentMoniker": "RestabookWebApp\\Controllers\\ArticleController.cs",
+              "ToolTip": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Controllers\\ArticleController.cs",
+              "RelativeToolTip": "RestabookWebApp\\Controllers\\ArticleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T20:53:08.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "About.cs",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Models\\About.cs",
               "RelativeDocumentMoniker": "RestabookWebApp\\Models\\About.cs",
@@ -70,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\About\\Create.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\About\\Create.cshtml",
@@ -78,12 +141,11 @@
               "RelativeToolTip": "RestabookWebApp\\Areas\\Admin\\Views\\About\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-23T13:02:19.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T13:02:19.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\About\\Index.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\About\\Index.cshtml",
@@ -95,19 +157,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "AboutController.cs",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Controllers\\AboutController.cs",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Controllers\\AboutController.cs",
               "ToolTip": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Controllers\\AboutController.cs",
               "RelativeToolTip": "RestabookWebApp\\Areas\\Admin\\Controllers\\AboutController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowFUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-23T13:01:27.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "RestabookWebApp\\Controllers\\HomeController.cs",
@@ -119,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Delete.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Delete.cshtml",
@@ -131,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
@@ -143,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
@@ -155,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
@@ -167,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "SliderController.cs",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Controllers\\SliderController.cs",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Controllers\\SliderController.cs",
@@ -179,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "RestabookWebApp\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",

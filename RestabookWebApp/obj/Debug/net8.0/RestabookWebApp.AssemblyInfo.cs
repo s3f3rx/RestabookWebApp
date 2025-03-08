@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestabookWebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4db40c8cdfa4e57d964c83e6d87eb4a8ac348a9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f4c0189b4326832bc077fa0aacff21ee0166912")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestabookWebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestabookWebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -9,7 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05c18197-1b40-4e4e-b14b-22307a0d8e9b" name="Changes" comment="" />
+    <list default="true" id="05c18197-1b40-4e4e-b14b-22307a0d8e9b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RestabookWebApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RestabookWebApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restabookwebapp.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restabookwebapp.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restabookwebapp.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restabookwebapp.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/restabookwebapp.strings.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/restabookwebapp.strings.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/CodeChunks.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/CodeChunks.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/FileContentIndex/1fb3426f-b45e-433f-8d22-b7184fa10af1.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/FileContentIndex/5bb7edf0-f2b7-49ad-9c16-a8a24940d53b.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/FileContentIndex/6c4e96c3-882b-40e6-ba63-054e24353248.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/FileContentIndex/87b9f71c-abe1-4b43-b51a-d86bb5ccc29f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/FileContentIndex/a8441299-c266-47e1-b7f6-b37dcfa8888f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/fileList.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RestabookWebApp/v17/fileList.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestabookWebApp/obj/Debug/net8.0/RestabookWebApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RestabookWebApp/obj/Debug/net8.0/RestabookWebApp.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestabookWebApp/obj/Debug/net8.0/RestabookWebApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/RestabookWebApp/obj/Debug/net8.0/RestabookWebApp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestabookWebApp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/RestabookWebApp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestabookWebApp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/RestabookWebApp/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +40,9 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/RestabookWebApp" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8a03fcac5714437e83949a44ecf2e771c90920/64/2b3f9ab3/RuntimeHelpers.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +68,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fb367341658aaedd7de424d4c9189db33c4387e268dcc4011918569442ab12/AsyncTaskMethodBuilderT.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RestabookWebApp/Views/Menu/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -51,21 +78,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.RestabookWebApp: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.RestabookWebApp: https.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "full.screen.before.presentation.mode": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.RestabookWebApp: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.RestabookWebApp: https.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RestabookWebApp: https">
     <configuration name="RestabookWebApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RestabookWebApp/RestabookWebApp.csproj" />
@@ -181,12 +210,31 @@
       <workItem from="1740842643458" duration="2035000" />
       <workItem from="1740844854910" duration="10925000" />
       <workItem from="1740925665514" duration="15233000" />
+      <workItem from="1741201984303" duration="30000" />
+      <workItem from="1741202054748" duration="22000" />
+      <workItem from="1741285287041" duration="366000" />
+      <workItem from="1741285687820" duration="937000" />
+      <workItem from="1741286712355" duration="240000" />
+      <workItem from="1741286966923" duration="24000" />
+      <workItem from="1741287013617" duration="1295000" />
+      <workItem from="1741369601534" duration="9234000" />
+      <workItem from="1741379598775" duration="215000" />
+      <workItem from="1741379832081" duration="385000" />
+      <workItem from="1741380284030" duration="14000" />
+      <workItem from="1741380344905" duration="821000" />
+      <workItem from="1741449553324" duration="5424000" />
+      <workItem from="1741455041325" duration="6945000" />
+      <workItem from="1741464047216" duration="2000" />
+      <workItem from="1741464066698" duration="33000" />
+      <workItem from="1741464111593" duration="45000" />
+      <workItem from="1741464175385" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -232,19 +280,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/RestabookWebApp/Controllers/ArticleController.cs</url>
-          <line>40</line>
-          <properties documentPath="C:\Users\murad\source\repos\RestabookWebApp\RestabookWebApp\Controllers\ArticleController.cs" containingFunctionPresentation="Method 'Details'">
-            <startOffsets>
-              <option value="1223" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1224" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
