@@ -296,10 +296,6 @@ namespace RestabookWebApp.Migrations
                     b.Property<string>("PhotoPath")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Tags")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -314,6 +310,40 @@ namespace RestabookWebApp.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Articles");
+                });
+
+            modelBuilder.Entity("RestabookWebApp.Models.ArticleComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("ArticleId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("ArticleId");
+
+                    b.ToTable("ArticleComments");
                 });
 
             modelBuilder.Entity("RestabookWebApp.Models.ArticleTag", b =>
@@ -715,6 +745,25 @@ namespace RestabookWebApp.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("RestabookWebApp.Models.ArticleComment", b =>
+                {
+                    b.HasOne("RestabookWebApp.Models.AppUser", "AppUser")
+                        .WithMany()
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("RestabookWebApp.Models.Article", "Article")
+                        .WithMany("ArticleComments")
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Article");
+                });
+
             modelBuilder.Entity("RestabookWebApp.Models.ArticleTag", b =>
                 {
                     b.HasOne("RestabookWebApp.Models.Article", "Article")
@@ -747,6 +796,8 @@ namespace RestabookWebApp.Migrations
 
             modelBuilder.Entity("RestabookWebApp.Models.Article", b =>
                 {
+                    b.Navigation("ArticleComments");
+
                     b.Navigation("ArticleTags");
                 });
 

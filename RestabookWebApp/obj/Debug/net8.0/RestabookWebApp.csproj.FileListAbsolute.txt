@@ -268,3 +268,4 @@ C:\Users\murad\source\repos\RestabookWebApp\RestabookWebApp\bin\Debug\net8.0\Mic
 C:\Users\murad\source\repos\RestabookWebApp\RestabookWebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\murad\source\repos\RestabookWebApp\RestabookWebApp\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\murad\source\repos\RestabookWebApp\RestabookWebApp\obj\Debug\net8.0\RestabookWebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\murad\source\repos\RestabookWebApp\RestabookWebApp\obj\Debug\net8.0\RestabookWebApp.sourcelink.json

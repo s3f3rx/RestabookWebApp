@@ -21,9 +21,7 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="ViewComponents\" />
     <Folder Include="Views\Shared\Components\" />
-    <Folder Include="wwwroot\article\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +38,68 @@
     <_ContentIncludedByDefault Remove="wwwroot\service\4fc8dcbf-da06-48c8-afb1-22f1b62639ab3.jpg" />
     <_ContentIncludedByDefault Remove="wwwroot\service\b45526ac-3b26-4992-b298-544cdc82aba03.jpg" />
     <_ContentIncludedByDefault Remove="wwwroot\about\250c47a4-eebf-448d-ba29-69329244f9303.jpg" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\appsettings.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\bin\Debug\net8.0\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\bin\Debug\net8.0\appsettings.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\bin\Debug\net8.0\RestabookWebApp.deps.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\bin\Debug\net8.0\RestabookWebApp.runtimeconfig.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\bin\Debug\net8.0\RestabookWebApp.staticwebassets.endpoints.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\bin\Debug\net8.0\RestabookWebApp.staticwebassets.runtime.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\Debug\net8.0\ApiEndpoints.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\Debug\net8.0\staticwebassets.build.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\Debug\net8.0\staticwebassets.development.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\Debug\net8.0\staticwebassets.pack.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\obj\RestabookWebApp.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Properties\launchSettings.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\wwwroot\admin\vendor\fontawesome-free\package.json" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\About\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\About\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\About\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\About\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Category\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Category\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Category\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Category\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Chef\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Chef\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Chef\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Chef\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Dashboard\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Event\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Event\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Event\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Event\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Product\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Product\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Product\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Product\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Service\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Service\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Service\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Service\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Slider\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Slider\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Slider\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\Slider\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Areas\Admin\Views\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Views\About\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Views\Home\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Views\Shared\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="RestabookWebApp\Views\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\about\9e9b9063-45df-402e-8559-d509eb06787a3.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\12501bae-9504-4127-85ae-6f5951c8c67c55192261.jpeg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\3b608815-3dcd-495b-b765-9b4f5dae237dWhatsApp Image 2024-12-29 at 17.06.38_cbb70fc7.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\chef\9ada7da0-a98c-4b00-be64-880072e7a1963.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\service\15e3ed85-315d-4041-9a79-e46f277639c03.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\service\52a431a1-6b05-427f-b33f-2198235e5bf01.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\service\a9d67cb0-42ca-4630-84c6-482c67a0f8c12.jpg" />
   </ItemGroup>
 
 </Project>

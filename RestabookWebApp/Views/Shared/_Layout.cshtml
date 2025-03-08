@@ -81,8 +81,6 @@
                                     <!--second level -->
                                     <ul>
                                         <li><a href="shop.html">Shop</a></li>
-                                        <li><a href="product-single.html">Product Single</a></li>
-                                        <li><a href="blog-single.html">Blog single</a></li>
                                         <li><a href="cart.html">Cart</a></li>
                                     </ul>
                                     <!--second level end-->
@@ -93,10 +91,6 @@
                                     <ul>
                                         @if (User.Identity.IsAuthenticated)
                                         {
-                                            @* @if (User.IsInRole("Admin")) *@
-                                            @* { *@
-                                            @*     <li><a href="/admin">Admin</a></li> *@
-                                            @* } *@
                                             <li><a href="/auth/changepassword">Change Password</a></li>
                                             <li><a href="/auth/logout">Logout</a></li>
                                         }

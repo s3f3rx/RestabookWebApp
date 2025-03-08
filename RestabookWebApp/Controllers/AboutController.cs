@@ -6,7 +6,7 @@ namespace RestabookWebApp.Controllers;
 
 public class AboutController(AppDbContext context) : Controller
 {
-    // GET
+    
     public IActionResult Index()
     {
         var about = context.Abouts.FirstOrDefault();

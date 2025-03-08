@@ -1,8 +1,0 @@
-@model About
-
-<form method="post" enctype="multipart/form-data">
-    <input type="hidden" asp-for="PhotoPath">
-    <p>Are you sure to delete this: @Model.Title?</p>
-    <button type="submit" class="btn btn-danger">Delete</button>
-    <a href="/admin/about" class="btn btn-warning">Cancel</a>
-</form>

@@ -47,6 +47,11 @@ public class ArticleController(AppDbContext context, IWebHostEnvironment env, IH
             return View(article);
         }
 
+        if (httpContextAccessor.HttpContext == null)
+        {
+            return RedirectToAction("Login", "Auth");
+        }
+
         var userClaim = httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier);
         if (userClaim == null)
         {
@@ -158,7 +163,7 @@ public class ArticleController(AppDbContext context, IWebHostEnvironment env, IH
         if (id == null) return NotFound();
         var article = await context.Articles.FindAsync(id);
         if (article == null) return NotFound();
-        
+
         //true olsa hard delete
         if (hardDelete)
         {

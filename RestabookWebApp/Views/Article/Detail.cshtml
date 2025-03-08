@@ -74,12 +74,13 @@
                                     foreach (var relatedArticle in relatedArticles)
                                     {
                                         <div class="item-related col-md-4">
-                                            <a href="#"><img src="@relatedArticle.PhotoPath"
-                                                             alt="@relatedArticle.Title"></a>
+                                            <a href="/article/detail/@relatedArticle.Id">
+                                            <img src="@relatedArticle.PhotoPath" alt="@relatedArticle.Title">
+                                            </a>
                                             <h3><a href="#">@relatedArticle.Title</a></h3>
                                             <span class="post-date">@relatedArticle.CreatedDate.ToString("dd MMMM yyyy",
                                                     new CultureInfo("az"))
-                                                </span>
+                                            </span>
                                         </div>
                                     }
                                 }
@@ -93,66 +94,63 @@
                         <!-- post-related  end-->
                         <div class="single-post-comm fl-wrap">
                             <!--title-->
-                            <h6 class="comments-title">Comments<span>( 2 )</span></h6>
-                            <ul class="commentlist clearafix">
-                                <li class="comment">
-                                    <div class="comment-body">
-                                        <div class="comment-author">
-                                            <img alt='' src='images/avatar/1.jpg' width="50" height="50">
-                                        </div>
-                                        <cite class="fn"><a href="#">Kevin</a></cite>
-                                        <div class="comment-meta">
-                                            <h6><a href="#">January 02, 2014 at 07:39 am</a> / <a
-                                                    class='comment-reply-link' href="#">Reply</a></h6>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-                                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-                                            dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-                                            viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
-                                            mollis. Ut justo.</p>
-                                    </div>
-                                </li>
-                                <li class="comment">
-                                    <!--comment body-->
-                                    <div class="comment-body">
-                                        <div class="comment-author">
-                                            <img alt='' src='images/avatar/2.jpg' width="50" height="50">
-                                        </div>
-                                        <cite class="fn"><a href="#">Andy</a></cite>
-                                        <div class="comment-meta">
-                                            <h6><a href="#">January 22, 2014 at 03:19 am</a> / <a
-                                                    class='comment-reply-link' href="#">Reply</a></h6>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-                                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-                                            dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet
-                                            viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
-                                            mollis. Ut justo.</p>
-                                    </div>
-                                </li>
+                            <h6 class="comments-title">Comments
+                                ( @(Model.ArticleComments?.Count > 0 ? Model.ArticleComments.Count : 0) )
+                            </h6>
+                            <ul class="commentlist clearfix"
+                                style="list-style-type: none; padding: 0; margin: 0; width: 100%;">
+                                @if (Model.ArticleComments != null && Model.ArticleComments.Any())
+                                {
+                                    foreach (var item in Model.ArticleComments)
+                                    {
+                                        <li class="comment"
+                                            style="display: block; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;">
+                                            <div class="comment-body" style="width: 100%; box-sizing: border-box;">
+                                                <cite class="fn" style="font-weight: bold;">
+                                                    <a href="#">@item.AppUser.FirstName @item.AppUser.LastName</a>
+                                                </cite>
+                                                <div class="comment-meta" style="margin-top: 5px;">
+                                                    <h6>
+                                                        <a href="#">
+                                                            @item.CreatedDate.ToString("dd MMMM yyyy HH:mm", new CultureInfo("az"))
+                                                        </a>
+                                                    </h6>
+                                                </div>
+                                                <p style="margin-top: 10px; font-size: 14px; line-height: 1.6; width: 100%;">@item.Comment</p>
+                                            </div>
+                                        </li>
+                                    }
+                                }
+                                else
+                                {
+                                    <p style="font-weight: bold; width: 100%;">No comments available.</p>
+                                }
                             </ul>
+
                             <div class="clearfix"></div>
-                            <div id="respond" class="clearafix">
-                                <h6 class="comments-title">Leave A Review</h6>
-                                <form class="custom-form fl-wrap">
-                                    <fieldset>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <input type="text" name="name" placeholder="Your Name *" value=""/>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <input type="text" name="email" placeholder="Email Address *" value=""/>
-                                            </div>
-                                        </div>
-                                        <textarea name="comments" cols="40" rows="3"
-                                                  placeholder="Your Message:"></textarea>
-                                        <div class="clearfix"></div>
-                                        <button class="btn float-btn  color-bg" id="submit_comm">Add Comment <i
-                                                class="fal fa-long-arrow-right"></i></button>
-                                    </fieldset>
-                                </form>
-                            </div>
-                            <!--end respond-->
+
+                            @if (User.Identity?.IsAuthenticated == true)
+                            {
+                                <div id="respond" class="clearafix">
+                                    <h6 class="comments-title">Leave A Comment</h6>
+                                    <form id="commentForm" class="custom-form fl-wrap">
+                                        @Html.AntiForgeryToken()
+                                        <fieldset>
+                                            <input type="hidden" name="articleId" value="@Model.Id"/>
+                                            <textarea name="comment" id="comment" cols="40" rows="3"
+                                                      placeholder="Your Message:"></textarea>
+                                            <div class="clearfix"></div>
+                                            <button type="submit" class="btn float-btn color-bg" id="submit_comm">
+                                                Add Comment <i class="fal fa-long-arrow-right"></i>
+                                            </button>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            }
+                            else
+                            {
+                                <a href="/auth/login/" class="btn btn-dark">Login</a>
+                            }
                         </div>
                         <!--comments end -->
                     </div>
@@ -172,7 +170,9 @@
                                         {
                                             <li>
                                                 <div class="recent-post-img">
-                                                    <a href="#"><img src="@item.PhotoPath" alt="@item.Title"></a>
+                                                    <a href="/article/detail/@item.Id">
+                                                        <img src="@item.PhotoPath" alt="@item.Title">
+                                                    </a>
                                                 </div>
                                                 <div class="recent-post-content">
                                                     <h4><a href="#">@item.Title</a></h4>
@@ -180,7 +180,8 @@
                                                         <span
                                                             class="post-date">@item.CreatedDate.ToString("dd MMMM yyyy",
                                                                 new CultureInfo("az"))</span>
-                                                        <a href="#" class="post-comments">0 Comments</a>
+                                                        <a href="#"
+                                                           class="post-comments">@item.ArticleComments.Count Comments</a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -264,3 +265,62 @@
     <!--  section end  -->
     <div class="brush-dec2 brush-dec_bottom"></div>
 </div>
+
+<script>
+    document.getElementById('commentForm').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData();
+        formData.append('articleId', document.querySelector('input[name="articleId"]').value);
+        formData.append('comment', document.getElementById('comment').value);
+
+        const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+        try {
+            const response = await fetch('/Article/AddComment', {
+                method: 'POST',
+                headers: {
+                    'RequestVerificationToken': token
+                },
+                body: formData
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                if (data.success) {
+                    const commentsList = document.querySelector('.commentlist');
+                    const newComment = `
+                    <li class="comment" style="display: block; margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;">
+                        <div class="comment-body" style="width: 100%; box-sizing: border-box;">
+                            <cite class="fn" style="font-weight: bold;">
+                                <a href="#">${data.userName}</a>
+                            </cite>
+                            <div class="comment-meta" style="margin-top: 5px;">
+                                <h6><a href="#">${data.date}</a></h6>
+                            </div>
+                            <p style="margin-top: 10px; font-size: 14px; line-height: 1.6; width: 100%;">${data.comment}</p>
+                        </div>
+                    </li>`;
+
+                    // Remove "No comments available" message if it exists
+                    const noCommentsMessage = commentsList.querySelector('p');
+                    if (noCommentsMessage && noCommentsMessage.textContent === 'No comments available.') {
+                        noCommentsMessage.remove();
+                    }
+
+                    // Add the new comment
+                    commentsList.insertAdjacentHTML('afterbegin', newComment);
+
+                    // Clear the form
+                    document.getElementById('comment').value = '';
+
+                    // Update only the main comments title
+                    const mainCommentsTitle = document.querySelector('.single-post-comm > .comments-title');
+                    mainCommentsTitle.textContent = `Comments ( ${data.totalComments} )`;
+                }
+            }
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
+</script>

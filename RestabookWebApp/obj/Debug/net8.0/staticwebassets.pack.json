@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\RestabookWebApp.uy00wfp9yg.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\about\\9e9b9063-45df-402e-8559-d509eb06787a3.jpg",
-      "PackagePath": "staticwebassets\\about\\9e9b9063-45df-402e-8559-d509eb06787a3.jpg"
-    },
-    {
       "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\admin\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\admin\\css\\sb-admin-2.css"
     },
@@ -7429,16 +7425,12 @@
       "PackagePath": "staticwebassets\\admin\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\article\\12fe4f1c-21e0-46a6-b7e3-3d3b0d74f45817.jpg",
-      "PackagePath": "staticwebassets\\article\\12fe4f1c-21e0-46a6-b7e3-3d3b0d74f45817.jpg"
+      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\article\\2953f08f-d2d2-46ed-856f-4abed6fc6a399.jpg",
+      "PackagePath": "staticwebassets\\article\\2953f08f-d2d2-46ed-856f-4abed6fc6a399.jpg"
     },
     {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\article\\d724f27d-103c-4127-b258-67b30fafe7509.jpg",
-      "PackagePath": "staticwebassets\\article\\d724f27d-103c-4127-b258-67b30fafe7509.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\article\\fba20925-5b1a-4d73-a529-dbda7a8ca8635.jpg",
-      "PackagePath": "staticwebassets\\article\\fba20925-5b1a-4d73-a529-dbda7a8ca8635.jpg"
+      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\article\\a03dbaa5-1501-4c82-9760-23bb978e000d17.jpg",
+      "PackagePath": "staticwebassets\\article\\a03dbaa5-1501-4c82-9760-23bb978e000d17.jpg"
     },
     {
       "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\assets\\css\\color.css",
@@ -7909,76 +7901,8 @@
       "PackagePath": "staticwebassets\\assets\\video\\1.mp4"
     },
     {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\chef\\12501bae-9504-4127-85ae-6f5951c8c67c55192261.jpeg",
-      "PackagePath": "staticwebassets\\chef\\12501bae-9504-4127-85ae-6f5951c8c67c55192261.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\chef\\3b608815-3dcd-495b-b765-9b4f5dae237dWhatsApp Image 2024-12-29 at 17.06.38_cbb70fc7.jpg",
-      "PackagePath": "staticwebassets\\chef\\3b608815-3dcd-495b-b765-9b4f5dae237dWhatsApp Image 2024-12-29 at 17.06.38_cbb70fc7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\chef\\9ada7da0-a98c-4b00-be64-880072e7a1963.jpg",
-      "PackagePath": "staticwebassets\\chef\\9ada7da0-a98c-4b00-be64-880072e7a1963.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\0b9f9e82-4f7b-4cb9-bf23-470b5cf84f3810.jpg",
-      "PackagePath": "staticwebassets\\product\\0b9f9e82-4f7b-4cb9-bf23-470b5cf84f3810.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\70cec5f0-bd89-4340-a954-8f9783a7d17b4.jpg",
-      "PackagePath": "staticwebassets\\product\\70cec5f0-bd89-4340-a954-8f9783a7d17b4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\74db0eca-8303-4ff2-809e-119cd2b06ac76.jpg",
-      "PackagePath": "staticwebassets\\product\\74db0eca-8303-4ff2-809e-119cd2b06ac76.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\7a26863b-67e9-4203-b4b0-75120fa565e01.jpg",
-      "PackagePath": "staticwebassets\\product\\7a26863b-67e9-4203-b4b0-75120fa565e01.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\864561be-cc3e-4865-98db-ee5a33a505043.jpg",
-      "PackagePath": "staticwebassets\\product\\864561be-cc3e-4865-98db-ee5a33a505043.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\8ef9bb3c-5671-42b5-874c-e4ee00a5a0799.jpg",
-      "PackagePath": "staticwebassets\\product\\8ef9bb3c-5671-42b5-874c-e4ee00a5a0799.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\b40326c4-1004-45fa-9089-712d1d1f01112.jpg",
-      "PackagePath": "staticwebassets\\product\\b40326c4-1004-45fa-9089-712d1d1f01112.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\d6d8c654-36af-41d8-8c2a-407f1cadfefc8.jpg",
-      "PackagePath": "staticwebassets\\product\\d6d8c654-36af-41d8-8c2a-407f1cadfefc8.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\product\\ee396e14-a37a-4dd9-880c-ae0a923265372.jpg",
-      "PackagePath": "staticwebassets\\product\\ee396e14-a37a-4dd9-880c-ae0a923265372.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\service\\15e3ed85-315d-4041-9a79-e46f277639c03.jpg",
-      "PackagePath": "staticwebassets\\service\\15e3ed85-315d-4041-9a79-e46f277639c03.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\service\\52a431a1-6b05-427f-b33f-2198235e5bf01.jpg",
-      "PackagePath": "staticwebassets\\service\\52a431a1-6b05-427f-b33f-2198235e5bf01.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\service\\a9d67cb0-42ca-4630-84c6-482c67a0f8c12.jpg",
-      "PackagePath": "staticwebassets\\service\\a9d67cb0-42ca-4630-84c6-482c67a0f8c12.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\slider\\6c726288-5b19-4587-8dfe-62cdfe9e6bed1.jpg",
-      "PackagePath": "staticwebassets\\slider\\6c726288-5b19-4587-8dfe-62cdfe9e6bed1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\slider\\c1d34576-cf78-494b-b7a4-609229e26d235.jpg",
-      "PackagePath": "staticwebassets\\slider\\c1d34576-cf78-494b-b7a4-609229e26d235.jpg"
-    },
-    {
-      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\slider\\f3967651-0cf9-4769-b44b-0c5df62c1bc417.jpg",
-      "PackagePath": "staticwebassets\\slider\\f3967651-0cf9-4769-b44b-0c5df62c1bc417.jpg"
+      "Id": "C:\\Users\\murad\\source\\repos\\RestabookWebApp\\RestabookWebApp\\wwwroot\\slider\\29307bb9-b2ec-44e7-a344-45d337281d5e17.jpg",
+      "PackagePath": "staticwebassets\\slider\\29307bb9-b2ec-44e7-a344-45d337281d5e17.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RestabookWebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

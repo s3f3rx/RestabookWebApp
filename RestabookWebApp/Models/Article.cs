@@ -19,5 +19,6 @@ public class Article : BaseEntity
     public Category Category { get; set; }
 
     // Many-to-Many 
-    public ICollection<ArticleTag> ArticleTags { get; set; }
+    public ICollection<ArticleTag> ArticleTags { get; set; } = new List<ArticleTag>();
+    public ICollection<ArticleComment> ArticleComments { get; set; } = new List<ArticleComment>();
 }
